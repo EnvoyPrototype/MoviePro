@@ -50,6 +50,8 @@ namespace MoviePro
             services.AddTransient<SeedService>();
             services.AddHttpClient();
             services.AddScoped<IRemoteMovieService, TMDBMovieService>();
+            services.AddScoped<IDataMappingService, TMDBMappingService>();
+
 
         }
 
