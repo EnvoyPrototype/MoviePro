@@ -8,7 +8,7 @@ namespace MoviePro.Enums
     public enum MovieCategory
     {
         now_playing,
-        poppular,
+        popular,
         top_rated,
         upcoming
     }
