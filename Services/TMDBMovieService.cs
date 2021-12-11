@@ -91,7 +91,7 @@ namespace MoviePro.Services
             MovieSearch movieSearch = new();
 
             // Step 2: Assemble the full request uri string
-            var query = $"{_appSettings.TMDBSettings.BaseUrl}/movie{category}";
+            var query = $"{_appSettings.TMDBSettings.BaseUrl}/movie/{category}";
 
             var queryParams = new Dictionary<string, string>()
             {
