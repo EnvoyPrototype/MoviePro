@@ -46,7 +46,8 @@ namespace MoviePro
 
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
-            
+            services.AddRazorPages();
+
             services.AddTransient<SeedService>();
             services.AddHttpClient();
             services.AddScoped<IRemoteMovieService, TMDBMovieService>();
