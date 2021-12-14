@@ -19,7 +19,7 @@ namespace MoviePro.Controllers
 
         private readonly IDataMappingService _mappingService;
 
-        public async Task<IActionResult> Detail(int id)
+        public async Task<IActionResult> Details(int id)
         {
             var actor = await _tmdbMovieService.ActorDetailAsync(id);
             actor = _mappingService.MapActorDetail(actor);
