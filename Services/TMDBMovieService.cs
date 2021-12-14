@@ -61,7 +61,7 @@ namespace MoviePro.Services
             MovieDetail movieDetail = new();
 
             // Step 2: Assemble the request
-            var query = $"{_appSettings.TMDBSettings.BaseUrl}/movie{id}";
+            var query = $"{_appSettings.TMDBSettings.BaseUrl}/movie/{id}";
             var queryParams = new Dictionary<string, string>()
             {
                 { "api_key", _appSettings.MovieProSettings.TmDbApiKey },
