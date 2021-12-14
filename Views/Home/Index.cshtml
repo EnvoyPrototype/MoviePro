@@ -24,7 +24,6 @@
     }
 </style>
 
-<!-- UPCOMING carousel -->
 <section class="px-4">
     <div class="row">
         <span class="btn btn-lg btn-block btn-warning font-weight-bolder border-dark">UPCOMING</span>
@@ -34,7 +33,7 @@
             <div class="carousel-inner">
                 @{
                     var classText = "active";
-                    @for (var slide = 0; slide <= 3; slide++)
+                    for (var slide = 0; slide <= 3; slide++)
                     {
                         <div class="carousel-item @classText">
                             <div class="row">
@@ -52,7 +51,6 @@
                                     </div>
                                 }
                             </div>
-
                         </div>
                         classText = "";
                     }
@@ -62,7 +60,6 @@
     </div>
 </section>
 
-<!-- NOW PLAYING carousel -->
 <section class="px-4">
     <div class="row">
         <span class="btn btn-lg btn-block btn-warning font-weight-bolder border-dark">NOW PLAYING</span>
@@ -72,7 +69,7 @@
             <div class="carousel-inner">
                 @{
                     classText = "active";
-                    @for (var slide = 0; slide <= 3; slide++)
+                    for (var slide = 0; slide <= 3; slide++)
                     {
                         <div class="carousel-item @classText">
                             <div class="row">
@@ -90,7 +87,6 @@
                                     </div>
                                 }
                             </div>
-
                         </div>
                         classText = "";
                     }
@@ -100,7 +96,6 @@
     </div>
 </section>
 
-<!-- POPULAR carousel -->
 <section class="px-4">
     <div class="row">
         <span class="btn btn-lg btn-block btn-warning font-weight-bolder border-dark">POPULAR</span>
@@ -110,7 +105,7 @@
             <div class="carousel-inner">
                 @{
                     classText = "active";
-                    @for (var slide = 0; slide <= 3; slide++)
+                    for (var slide = 0; slide <= 3; slide++)
                     {
                         <div class="carousel-item @classText">
                             <div class="row">
@@ -128,7 +123,6 @@
                                     </div>
                                 }
                             </div>
-
                         </div>
                         classText = "";
                     }
@@ -138,7 +132,6 @@
     </div>
 </section>
 
-<!-- TOP RATED carousel -->
 <section class="px-4">
     <div class="row">
         <span class="btn btn-lg btn-block btn-warning font-weight-bolder border-dark">TOP RATED</span>
@@ -148,7 +141,7 @@
             <div class="carousel-inner">
                 @{
                     classText = "active";
-                    @for (var slide = 0; slide <= 3; slide++)
+                    for (var slide = 0; slide <= 3; slide++)
                     {
                         <div class="carousel-item @classText">
                             <div class="row">
@@ -166,7 +159,6 @@
                                     </div>
                                 }
                             </div>
-
                         </div>
                         classText = "";
                     }
